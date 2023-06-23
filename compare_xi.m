@@ -1,3 +1,4 @@
+%%%%%%%%%% Varying Ambiguity Aversion %%%%%%%%%%%%
 A = 0.02;
 B = 0.06/0.16;
 C = 0;

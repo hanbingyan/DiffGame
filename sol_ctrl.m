@@ -1,4 +1,5 @@
 function [ctrl_t, ctrl_alpha, ctrl_h, y] = sol_ctrl(A, B, D, Q, R, xi, T, G, nu, mu, flag)
+% Helper function to solver ODEs for control-dependent ambiguity aversion
 % flag: only one solution does not have zeros
 [ctrl_t, y] = ode45(@(t, y) ODE_ctrl(t, y, A, B, D, Q, R, xi, flag), [0, T], [G/2; nu; mu; G; nu; mu], ...
     odeset('RelTol', 1e-5, 'AbsTol', 1e-5, 'Stats', 'on'));

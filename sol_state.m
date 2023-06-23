@@ -1,5 +1,6 @@
 function [st_t, st_alpha, st_h] = sol_state(A, B, C, D, Q, R, xi, T, G, nu, mu)
-
+% Helper function to solve the ODE system for state-dependent ambiguity
+% aversion
 [st_t, y] = ode45(@(t, y) ODE_state(t, y, A, B, C, D, Q, R, xi), [0, T], [G/2; nu; mu; G; nu; mu], ...
     odeset('RelTol', 1e-13, 'AbsTol', 1e-13, 'Stats', 'on'));
 

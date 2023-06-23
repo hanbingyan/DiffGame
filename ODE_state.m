@@ -1,4 +1,5 @@
 function dydt = ODE_state(t, y, A, B, C, D, Q, R, xi)
+% The ODE system for state-dependent ambiguity aversion
 delta = y(4) - y(5) - y(6);
 E = 2*y(1) - y(2) - y(3);
 alpha = -(delta*D*C*E/xi + B*delta + D*C*y(4))/(R + y(4)*D^2 + delta*E*D^2/xi);

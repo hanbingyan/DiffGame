@@ -1,4 +1,5 @@
 function [x, alpha, h, y] = closedloop(A, B, xi, T, mu)
+% Closed-loop control in Han, Pun, and Wong (Finance and Stochastics, 2021)
 % % Note that xi in F&S is 1/xi in diff game work. 
 
 r = A;
