@@ -10,6 +10,8 @@ The Matlab code relies on the `ode45` function to solve the ODE systems in the p
 
 * `compare_linear.m` considers a linear relationship between ambiguity and risk aversions. It gives Figure 3.
 
+* `nonlinear.m` considers a quadratic relationship, yielding Figure 4.
+
 * The ODE system for state-dependent ambiguity aversion is solved in `sol_state.m` and `ODE_state.m`.
 
 * The ODE system for control-dependent ambiguity aversion is solved in `sol_ctrl.m` and `ODE_ctrl.m`.

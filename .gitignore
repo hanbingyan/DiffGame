@@ -1,0 +1,9 @@
+
+logs/.DS_Store
+.DS_Store
+*.pyc
+*.xml
+*.iml
+*.pickle
+*.pdf
+test_code
